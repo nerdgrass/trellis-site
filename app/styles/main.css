@@ -6824,11 +6824,18 @@ body {
   background: #ccc;
 }
 
-.fix {
+.nav-fix {
   position: fixed;
   top: 0;
   z-index: 1000;
-  width: 100;
+  width: 85%;
+}
+
+.subnav-fix {
+  position: fixed;
+  top: 100px;
+  z-index: 1000;
+  width: 85%;
 }
 
 @media (min-width: 768px) {
@@ -6892,8 +6899,135 @@ body {
   }
 }
 
+.service-container {
+  width: 100%;
+  padding: 5em;
+}
+
+.seo.service-container {
+  background: #867999;
+}
+
+.marketing.service-container {
+  background: #bca779;
+}
+
+.ecommerce.service-container {
+  background: #698748;
+}
+
+.web-design.service-container {
+  background: #96a65c;
+}
+
 .jumbotron {
   margin: 50px auto 0 auto;
+}
+
+div.team {
+  margin-bottom: 10px;
+}
+
+.team figure img {
+  position: relative;
+  display: block;
+  max-width: 100%;
+}
+
+.team figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  color: #ed4e6e;
+  background: #2c3f52;
+}
+
+.team figcaption h3 {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+
+.team figcaption span:before {
+  content: 'by ';
+}
+
+.team figcaption a {
+  display: inline-block;
+  padding: 5px 10px;
+  color: #fff;
+  text-align: center;
+  background: #ed4e6e;
+  border-radius: 2px;
+}
+
+.team {
+  /*perspective*/
+
+  -webkit-perspective: 1700px;
+     -moz-perspective: 1700px;
+      -ms-perspective: 1700px;
+       -o-perspective: 1700px;
+          perspective: 1700px;
+  /*perspective-origin*/
+
+  -webkit-perspective-origin: 0 50%;
+     -moz-perspective-origin: 0 50%;
+      -ms-perspective-origin: 0 50%;
+       -o-perspective-origin: 0 50%;
+          perspective-origin: 0 50%;
+}
+
+.team figure {
+  /*transform-style*/
+
+  -webkit-transform-style: preserve-3d;
+     -moz-transform-style: preserve-3d;
+      -ms-transform-style: preserve-3d;
+       -o-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.team figure > div {
+  overflow: hidden;
+}
+
+.team figure img {
+  /*transition*/
+
+  -webkit-transition: transform 0.4s;
+     -moz-transition: transform 0.4s;
+       -o-transition: transform 0.4s;
+          transition: transform 0.4s;
+}
+
+.no-touch .team figure:hover img,
+.team figure.cs-hover img {
+  transform: translateX(25%);
+}
+
+.team figcaption {
+  width: 50%;
+  height: 100%;
+  opacity: 0;
+  transform: rotateY(-90deg);
+  transition: transform 0.4s, opacity 0.1s 0.3s;
+  backface-visibility: hidden;
+  transform-origin: 0 0;
+}
+
+.no-touch .team figure:hover figcaption,
+.team figure.cs-hover figcaption {
+  opacity: 1;
+  transform: rotateY(0deg);
+  transition: transform 0.4s, opacity 0.1s;
+}
+
+.team figcaption a {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
 }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -6908,8 +7042,17 @@ body {
 
 /* Since positioning the image, we need to help out the caption */
 
-.carousel-caption {
+.homepage-caption {
+  position: absolute;
+  right: 10%;
+  bottom: 20px;
+  left: 10%;
   z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 
 /* Declare heights because of positioning of img element */
