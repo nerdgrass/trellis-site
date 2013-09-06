@@ -6815,6 +6815,22 @@ body {
   color: #5a5a5a;
 }
 
+ul.inline {
+  padding: 0;
+}
+
+.inline li {
+  display: inline;
+}
+
+a.social {
+  display: inline-block;
+  width: 5em;
+  height: 5em;
+  margin: 0 1em;
+  background: #867999;
+}
+
 /*  IE 7 Notification */
 
 .browsehappy {
@@ -6833,7 +6849,7 @@ body {
 
 .subnav-fix {
   position: fixed;
-  top: 100px;
+  top: 75px;
   z-index: 1000;
   width: 85%;
 }
@@ -6901,7 +6917,7 @@ body {
 
 .service-container {
   width: 100%;
-  padding: 5em;
+  padding: 5em 0 10em 0;
 }
 
 .seo.service-container {
