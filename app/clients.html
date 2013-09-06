@@ -16,6 +16,95 @@
     <!-- endbuild -->
   </head>
   <body class="clients">
+    <div class="container">
+      <div class="navbar-wrapper sticky-nav">
+        <div class="navbar navbar-inverse">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Trellis</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="/">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="clients.html">Clients</a></li>
+              <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <button
+                  id="signIn"
+                  type="button"
+                  class="btn btn-default navbar-btn navbar-right"
+                  data-container="body"
+                  data-toggle="popover"
+                  data-placement="bottom"
+                  data-html="true"
+                  data-content="
+                    <form role='form'>
+                      <div class='form-group'>
+                        <label for='exampleInputEmail1'>Email address</label>
+                        <input type='email' class='form-control' id='exampleInputEmail1' placeholder='Enter email'>
+                      </div>
+                      <div class='form-group'>
+                        <label for='exampleInputPassword1'>Password</label>
+                        <input type='password' class='form-control' id='exampleInputPassword1' placeholder='Password'>
+                      </div>
+                      <div class='checkbox'>
+                        <label>
+                          <input type='checkbox'> Remember me next time
+                        </label>
+                      </div>
+                      <button type='submit' class='btn btn-default'>Submit</button>
+                    </form>
+                  "
+                >Sign in</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- End Nav -->
+
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Clients</h1>
+        </div>
+        <div class="col-md-12">
+          <p>
+            Ahcadiuh stove-up Moody's podunk Chundah. Gohd dammah., ankle biteah mistah man huck up t' from away kid hoppa bub bogan. Moosetown gash dang flatlanduhs and their boilin' plates buggin' wintah huntin' deeah mistah man stove up the pit, leaf peepahs lobstah paut huntin' deeah smokie no-see-um Sundee cah Moody's. Stove up Auguster potatoes some wicked bub Shit the bed. Feed 'uh the hot suppah. junkah Yessah Auguster.
+          </p>
+        </div>
+
+        <div class="col-md-12">
+          <ul id="og-grid" class="og-grid">
+            <li>
+              <a href="bostonmufflerandbrake.com" data-largesrc="images/1.jpg" data-title="BMB Automotive" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+                <img src="data:image/png;base64," data-src="holder.js/200x200/auto/#777:#7a7a7a/text:Client" alt=""/>
+              </a>
+            </li>
+            <li>
+              <a href="http://prestigekitchen-bath.com/" data-largesrc="images/2.jpg" data-title="Prestige Kitchen &amp; Bath" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
+                <img src="data:image/png;base64," data-src="holder.js/200x200/auto/#777:#7a7a7a/text:Client" alt=""/>
+              </a>
+            </li>
+            <li>
+              <a href="https://vintagejewelryboston.com/" data-largesrc="images/3.jpg" data-title="Vintage Jewelry Boston" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+                <img src="data:image/png;base64," data-src="holder.js/200x200/auto/#777:#7a7a7a/text:Client" alt=""/>
+              </a>
+            </li>
+            <li>
+              <a href="https://mytriptychart.com/" data-largesrc="images/1.jpg" data-title="Triptych Art" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+                <img src="data:image/png;base64," data-src="holder.js/200x200/auto/#777:#7a7a7a/text:Client" alt=""/>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div<
 
 
       <!-- FOOTER -->
@@ -62,6 +151,12 @@
 
     <script type="text/javascript" src="scripts/main.js"></script>
     <script type="text/javascript" src="scripts/hello.js"></script>
+    <script type="text/javascript" src="scripts/grid.js"></script>
+    <script>
+      $(function() {
+        Grid.init();
+      });
+    </script>
     <script type="text/javascript">
       $('#signIn').popover();
     </script>

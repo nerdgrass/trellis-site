@@ -32,3 +32,4 @@ $(document).ready ->
       else if $nav.hasClass("nav-fix") and $(window).scrollTop() < $navSpacer.offset().top
         $nav.removeClass "nav-fix" # Unfix nav element
         $navSpacer.remove() # Remove nav spacer
+
