@@ -6844,12 +6844,18 @@ a.social {
   position: fixed;
   top: 0;
   z-index: 1000;
-  width: 85%;
+  width: 75%;
 }
 
 .subnav-fix {
   position: fixed;
   top: 75px;
+  z-index: 1000;
+  width: 85%;
+}
+
+.affix {
+  top: 0;
   z-index: 1000;
   width: 85%;
 }
@@ -6860,6 +6866,9 @@ a.social {
   }
   .navbar-wrapper .navbar {
     border-radius: 4px;
+  }
+  .affix {
+    width: 65%;
   }
 }
 
@@ -7278,11 +7287,6 @@ div.team {
 
 /* Carousel base class */
 
-.carousel {
-  margin-top: -90px;
-  margin-bottom: 60px;
-}
-
 /* Since positioning the image, we need to help out the caption */
 
 .homepage-caption {
@@ -7302,15 +7306,8 @@ div.team {
 
 .carousel .item {
   height: 500px;
+  background: url('../images/trellis-p-300.png');
   background-color: #777;
-}
-
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 500px;
-  min-width: 100%;
 }
 
 /* RESPONSIVE CSS
