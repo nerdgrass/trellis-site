@@ -1,0 +1,81 @@
+// Pad the edges of the mobile views a bit 
+.marketing {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  /* Remove the edge padding needed for mobile */
+  .marketing {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+// Center align the text within the three columns below the carousel
+.marketing .col-lg-4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-left: 10px;
+  margin-right: 10px;
+ }
+// Space out the Bootstrap <hr> more
+.featurette-divider {
+  margin: 80px 0; 
+}
+
+
+@media (min-width: 768px) {
+	.featurette-header {
+	  font-size: 72px;
+	}
+  p.featurette-lead {
+    font-size: 36px;
+  }
+  p.featurette-p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 992px) {
+  .featurette-header {
+    margin-top: 120px;
+  }
+}
+//Home
+body.home {
+  background:@lighter-green;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 40em;
+  background:url('../images/bg-diamond-beige.jpg');
+  background-color: #777;
+}
+.home-splash-logo {
+  width:100%;
+  margin-top:5em;
+}
+.home-splash-intro {
+  margin: 0 auto;
+  width:100%;
+}
+.featurette {padding:1em;}
+// .featurette.two {background:@lighter-ygreen;}
+
+.featurette-header {
+  font-family: 'homestead-display','Source Sans Pro', sans-serif;
+  color:@dark-green;
+}
+p.featurette-lead {
+  font-weight: 500;
+  color:@dark-green;
+}
+p.featurette-p {
+  color:@darker-green;
+  margin-bottom: 2em;
+}
