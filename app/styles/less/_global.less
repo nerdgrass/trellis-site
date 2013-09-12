@@ -27,21 +27,31 @@ a.social {
 }
 
 //Buttons
+.btn-default, .btn-primary {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+.btn-default::before, .btn-primary::before {
+  display: inline-block;
+  margin-right: 10px;
+  content: '\2192';
+}
+//Default Button (Use w/ light backgrounds)
 @btn-default-color:@dark-green;
 @btn-default-bg:@green;
 @btn-default-bg:rgba(0, 0, 0, 0);
 @btn-default-border:@dark-green;
 @btn-hover-color:@darker-green;
-.btn-default {
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 300;
-}
-.btn-default::before {
-  display: inline-block;
-  margin-right: 10px;
-  content: '\2192';
-}
 .btn-default:hover {
   color:@darker-green;
+}
+
+//Primary Button (Use w/ dark backgrounds)
+@btn-primary-color:@light-beige;
+@btn-primary-bg:@beige !important;
+@btn-primary-bg:rgba(0, 0, 0, 0);
+@btn-primary-border:@light-beige;
+.btn-default:hover {
+  color:@beige;
 }

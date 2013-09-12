@@ -2089,9 +2089,9 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn-primary {
-  color: #ffffff;
-  background-color: #428bca;
-  border-color: #357ebd;
+  color: #d8c9a3;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #d8c9a3;
 }
 
 .btn-primary:hover,
@@ -2099,9 +2099,9 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-  color: #ffffff;
-  background-color: #3276b1;
-  border-color: #285e8e;
+  color: #d8c9a3;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #c6b078;
 }
 
 .btn-primary:active,
@@ -2125,8 +2125,8 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #428bca;
-  border-color: #357ebd;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #d8c9a3;
 }
 
 .btn-warning {
@@ -6872,13 +6872,15 @@ a.social {
   background: #ccc;
 }
 
-.btn-default {
+.btn-default,
+.btn-primary {
   font-weight: 300;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
-.btn-default::before {
+.btn-default::before,
+.btn-primary::before {
   display: inline-block;
   margin-right: 10px;
   content: '\2192';
@@ -6886,6 +6888,10 @@ a.social {
 
 .btn-default:hover {
   color: #3a4f23;
+}
+
+.btn-default:hover {
+  color: #bca779;
 }
 
 .nav-fix {
