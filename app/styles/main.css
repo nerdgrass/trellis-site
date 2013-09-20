@@ -1,9 +1,3 @@
-@dark-purple #635577;
-
-@darker-purple #493c60;
-
-@darkest-purple #31254b;
-
 .btn {
   border: 2px;
 }
@@ -7019,6 +7013,122 @@ p.featurette-p {
   color: #3a4f23;
 }
 
+div.team {
+  margin-bottom: 10px;
+}
+
+.team figure img {
+  position: relative;
+  display: block;
+  max-width: 100%;
+}
+
+.team figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 65%;
+  height: 100%;
+  padding: 20px;
+  color: #ed4e6e;
+  background: rgba(58, 79, 35, 0.85);
+  opacity: 0;
+  transform: rotateY(-90deg);
+  transition: transform 0.4s, opacity 0.1s 0.3s;
+  backface-visibility: hidden;
+  transform-origin: 0 0;
+}
+
+.team figcaption h3 {
+  padding: 0;
+  margin: 0;
+  color: #e7dec8;
+}
+
+.team figcaption {
+  color: #839e64;
+}
+
+.team figcaption p {
+  color: #cad8b7;
+}
+
+.team figcaption a {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: .5em;
+  text-align: center;
+}
+
+.team figcaption a.twitter {
+  background: url('../images/twitter.png');
+}
+
+.team figcaption a.linkedin {
+  background: url('../images/linkedin.png');
+}
+
+.team figcaption a.github {
+  background: url('../images/github.png');
+}
+
+.team figcaption a.dribbble {
+  background: url('../images/dribbble.png');
+}
+
+.team {
+  /*perspective*/
+
+  -webkit-perspective: 1700px;
+     -moz-perspective: 1700px;
+      -ms-perspective: 1700px;
+       -o-perspective: 1700px;
+          perspective: 1700px;
+  /*perspective-origin*/
+
+  -webkit-perspective-origin: 0 50%;
+     -moz-perspective-origin: 0 50%;
+      -ms-perspective-origin: 0 50%;
+       -o-perspective-origin: 0 50%;
+          perspective-origin: 0 50%;
+}
+
+.team figure {
+  /*transform-style*/
+
+  -webkit-transform-style: preserve-3d;
+     -moz-transform-style: preserve-3d;
+      -ms-transform-style: preserve-3d;
+       -o-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.team figure > div {
+  overflow: hidden;
+}
+
+.team figure img {
+  /*transition*/
+
+  -webkit-transition: transform 0.4s;
+     -moz-transition: transform 0.4s;
+       -o-transition: transform 0.4s;
+          transition: transform 0.4s;
+}
+
+.no-touch .team figure:hover img,
+.team figure.cs-hover img {
+  transform: translateX(25%);
+}
+
+.no-touch .team figure:hover figcaption,
+.team figure.cs-hover figcaption {
+  opacity: 1;
+  transform: rotateY(0deg);
+  transition: transform 0.4s, opacity 0.1s;
+}
+
 .service-container {
   width: 100%;
   padding: 5em 0 10em 0;
@@ -7269,112 +7379,6 @@ p.featurette-p {
 
 .jumbotron {
   margin: 50px auto 0 auto;
-}
-
-div.team {
-  margin-bottom: 10px;
-}
-
-.team figure img {
-  position: relative;
-  display: block;
-  max-width: 100%;
-}
-
-.team figcaption {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 20px;
-  color: #ed4e6e;
-  background: #2c3f52;
-}
-
-.team figcaption h3 {
-  padding: 0;
-  margin: 0;
-  color: #fff;
-}
-
-.team figcaption span:before {
-  content: 'by ';
-}
-
-.team figcaption a {
-  display: inline-block;
-  padding: 5px 10px;
-  color: #fff;
-  text-align: center;
-  background: #ed4e6e;
-  border-radius: 2px;
-}
-
-.team {
-  /*perspective*/
-
-  -webkit-perspective: 1700px;
-     -moz-perspective: 1700px;
-      -ms-perspective: 1700px;
-       -o-perspective: 1700px;
-          perspective: 1700px;
-  /*perspective-origin*/
-
-  -webkit-perspective-origin: 0 50%;
-     -moz-perspective-origin: 0 50%;
-      -ms-perspective-origin: 0 50%;
-       -o-perspective-origin: 0 50%;
-          perspective-origin: 0 50%;
-}
-
-.team figure {
-  /*transform-style*/
-
-  -webkit-transform-style: preserve-3d;
-     -moz-transform-style: preserve-3d;
-      -ms-transform-style: preserve-3d;
-       -o-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-}
-
-.team figure > div {
-  overflow: hidden;
-}
-
-.team figure img {
-  /*transition*/
-
-  -webkit-transition: transform 0.4s;
-     -moz-transition: transform 0.4s;
-       -o-transition: transform 0.4s;
-          transition: transform 0.4s;
-}
-
-.no-touch .team figure:hover img,
-.team figure.cs-hover img {
-  transform: translateX(25%);
-}
-
-.team figcaption {
-  width: 50%;
-  height: 100%;
-  opacity: 0;
-  transform: rotateY(-90deg);
-  transition: transform 0.4s, opacity 0.1s 0.3s;
-  backface-visibility: hidden;
-  transform-origin: 0 0;
-}
-
-.no-touch .team figure:hover figcaption,
-.team figure.cs-hover figcaption {
-  opacity: 1;
-  transform: rotateY(0deg);
-  transition: transform 0.4s, opacity 0.1s;
-}
-
-.team figcaption a {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
 }
 
 @media (min-width: 768px) {

@@ -1,0 +1,101 @@
+// Team grid
+div.team {
+  margin-bottom: 10px;
+}
+.team figure img {
+    max-width: 100%;
+    display: block;
+    position: relative;
+}
+.team figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background:rgba(58, 79, 35, 0.85);
+    color: #ed4e6e;
+    height: 100%;
+    width: 65%;
+    opacity: 0;
+    backface-visibility: hidden;
+    transform-origin: 0 0;
+    transform: rotateY(-90deg);
+    transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+.team figcaption h3 {
+    margin: 0;
+    padding: 0;
+    color: @lighter-beige;
+}
+.team figcaption {
+    color: @light-green;
+}
+.team figcaption p {
+    color:@lightest-green;
+}
+.team figcaption a {
+    text-align: center;
+    width: 25px;height: 25px;
+    display: inline-block;
+    margin-right: .5em;
+}
+.team figcaption a.twitter {
+    background: url('../images/twitter.png');
+}
+.team figcaption a.linkedin {
+    background: url('../images/linkedin.png');
+}
+.team figcaption a.github {
+    background: url('../images/github.png');
+}
+.team figcaption a.dribbble {
+    background: url('../images/dribbble.png');
+}
+
+.team{
+/*perspective*/
+-webkit-perspective:1700px;
+   -moz-perspective:1700px;
+    -ms-perspective:1700px;
+     -o-perspective:1700px;
+        perspective:1700px;
+/*perspective-origin*/
+-webkit-perspective-origin:0 50%;
+   -moz-perspective-origin:0 50%;
+    -ms-perspective-origin:0 50%;
+     -o-perspective-origin:0 50%;
+        perspective-origin:0 50%;
+}
+
+.team figure{
+/*transform-style*/
+-webkit-transform-style:preserve-3d;
+   -moz-transform-style:preserve-3d;
+    -ms-transform-style:preserve-3d;
+     -o-transform-style:preserve-3d;
+        transform-style:preserve-3d;
+}
+
+.team figure > div {
+    overflow: hidden;
+}
+.team figure img{
+/*transition*/
+-webkit-transition:transform 0.4s;
+   -moz-transition:transform 0.4s;
+     -o-transition:transform 0.4s;
+        transition:transform 0.4s;
+}
+
+
+.no-touch .team figure:hover img,
+.team figure.cs-hover img {
+    transform: translateX(25%);
+}
+
+.no-touch .team figure:hover figcaption,
+.team figure.cs-hover figcaption {
+    opacity: 1;
+    transform: rotateY(0deg);
+    transition: transform 0.4s, opacity 0.1s;
+}

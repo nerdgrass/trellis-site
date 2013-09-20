@@ -5,6 +5,7 @@
 @import "less/_global.less";
 @import "less/_nav.less";
 @import "less/_home.less";
+@import "less/_about.less";
 @import "less/_services.less";
 @import "less/_clients.less";
 
@@ -14,103 +15,6 @@
 .jumbotron {
   margin: 50px auto 0 auto;
 }
-
-// Team grid
-div.team {
-  margin-bottom: 10px;
-}
-.team figure img {
-    max-width: 100%;
-    display: block;
-    position: relative;
-}
-.team figcaption {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 20px;
-    background: #2c3f52;
-    color: #ed4e6e;
-}
-.team figcaption h3 {
-    margin: 0;
-    padding: 0;
-    color: #fff;
-}
-.team figcaption span:before {
-    content: 'by ';
-}
-.team figcaption a {
-    text-align: center;
-    padding: 5px 10px;
-    border-radius: 2px;
-    display: inline-block;
-    background: #ed4e6e;
-    color: #fff;
-}
-.team{
-/*perspective*/
--webkit-perspective:1700px;
-   -moz-perspective:1700px;
-    -ms-perspective:1700px;
-     -o-perspective:1700px;
-        perspective:1700px;
-/*perspective-origin*/
--webkit-perspective-origin:0 50%;
-   -moz-perspective-origin:0 50%;
-    -ms-perspective-origin:0 50%;
-     -o-perspective-origin:0 50%;
-        perspective-origin:0 50%;
-}
-
-.team figure{
-/*transform-style*/
--webkit-transform-style:preserve-3d;
-   -moz-transform-style:preserve-3d;
-    -ms-transform-style:preserve-3d;
-     -o-transform-style:preserve-3d;
-        transform-style:preserve-3d;
-}
-
-.team figure > div {
-    overflow: hidden;
-}
-.team figure img{
-/*transition*/
--webkit-transition:transform 0.4s;
-   -moz-transition:transform 0.4s;
-     -o-transition:transform 0.4s;
-        transition:transform 0.4s;
-}
-
-
-.no-touch .team figure:hover img,
-.team figure.cs-hover img {
-    transform: translateX(25%);
-}
-.team figcaption {
-    height: 100%;
-    width: 50%;
-    opacity: 0;
-    backface-visibility: hidden;
-    transform-origin: 0 0;
-    transform: rotateY(-90deg);
-    transition: transform 0.4s, opacity 0.1s 0.3s;
-}
-.no-touch .team figure:hover figcaption,
-.team figure.cs-hover figcaption {
-    opacity: 1;
-    transform: rotateY(0deg);
-    transition: transform 0.4s, opacity 0.1s;
-}
-.team figcaption a {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-}
-
-
-
 
 @media (min-width: 768px) {
 
